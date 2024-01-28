@@ -1,3 +1,152 @@
-#root{
-    color:brown;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #F8F8F8;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wordle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.line {
+    display: flex;
+    gap: 10px;
+}
+
+.tile {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #3A3A3B;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: solid;
+}
+
+.keyboardSection {
+    margin: 10px;
+    padding: 10px;
+}
+
+.keyboardRow {
+    display: flex;
+    justify-content: center;
+}
+
+.keyboardButton {
+    width: 40px;
+    height: 55px;
+    font-size: 20px;
+    border: 2px solid #121214;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F8F8F8;
+    background-color: #818384;
+    border-radius: 5px;
+}
+.buttonEnter {
+    width: 70px;
+    font-size: 18px;
+}
+
+.buttonBack {
+    width: 85px;
+    font-size: 14px;
+}
+
+.correct {
+    background-color: #538D4E;
+}
+
+.almost {
+    background-color: #B59F3C;
+}
+
+.incorrect {
+    background-color: #3A3A3B;
+}
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 600px) {
+    .body {
+        max-width: none;
+        margin: 0;
+    }
+
+ .tile{
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+    .keyboardSection {
+        margin: 10px;
+        padding: 5px;
+    }
+    .keyboardButton {
+        width: 30px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .buttonEnter {
+        width: 70px;
+        font-size: 18px;
+    }
+    
+    .buttonBack {
+        width: 82px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .tile{
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+    .keyboardSection {
+        margin: 10px;
+        padding: 5px;
+    }
+    .keyboardButton {
+        width: 28px;
+        height: 43px;
+        font-size: 16px;
+    }
+
+    .buttonEnter {
+        width: 60px; 
+        font-size: 14px;
+    }
+    
+    .buttonBack {
+        width: 72px;
+        font-size: 12px;
+    }
 }
