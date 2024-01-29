@@ -119,7 +119,7 @@ const Wordle = () => {
 
   return (
     <>
-      <div className="wordle">
+      <div data-testid="wordle" className="wordle">
         {guesses.map((guess, i) => (
           <Line
             key={i}
