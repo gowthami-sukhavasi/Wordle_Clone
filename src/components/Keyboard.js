@@ -23,7 +23,11 @@ const Keyboard = ({ onKeyClick, keyboardState }) => {
               key={key}
               onClick={() => onKeyClick(key)}
             >
-              {key}
+              {key === BACKSPACE ? (
+                <span className="material-icons">backspace</span>
+              ) : (
+                key
+              )}
             </div>
           ))}
         </div>

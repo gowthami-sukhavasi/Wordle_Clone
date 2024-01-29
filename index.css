@@ -23,21 +23,21 @@ body {
 .wordle {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     max-width: 900px;
     margin: 0 auto;
 }
 
 .line {
     display: flex;
-    gap: 10px;
+    gap: 5px;
 }
 
 .tile {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     border: 2px solid #3A3A3B;
-    font-size: 24px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,8 +46,8 @@ body {
 }
 
 .keyboardSection {
-    margin: 10px;
-    padding: 10px;
+    margin: 10px 0 10px 0;
+    padding: 10px 0 10px 0;
 }
 
 .keyboardRow {
@@ -68,14 +68,14 @@ body {
     background-color: #818384;
     border-radius: 5px;
 }
+
 .buttonEnter {
     width: 70px;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .buttonBack {
-    width: 85px;
-    font-size: 14px;
+    width: 70px;
 }
 
 .correct {
@@ -98,55 +98,75 @@ body {
         margin: 0;
     }
 
- .tile{
+    .tile {
         width: 50px;
         height: 50px;
         font-size: 24px;
     }
+
     .keyboardSection {
-        margin: 10px;
-        padding: 5px;
+        margin: 10px 0 10px 0;
+        padding: 10px 0 10px 0;   
     }
+
     .keyboardButton {
-        width: 30px;
-        height: 45px;
+        width: 35px;
+        height: 55px;
         font-size: 20px;
     }
 
     .buttonEnter {
-        width: 70px;
-        font-size: 18px;
+        width: 60px;
+        font-size: 15px;
     }
-    
+
     .buttonBack {
-        width: 82px;
-        font-size: 13px;
+        width: 60px;
     }
 }
 
 @media screen and (max-width: 450px) {
-    .tile{
+    .tile {
         width: 50px;
         height: 50px;
         font-size: 24px;
     }
+
     .keyboardSection {
-        margin: 10px;
-        padding: 5px;
+        margin: 10px 0 10px 0;
+        padding: 10px 0 10px 0;    
     }
+
     .keyboardButton {
-        width: 28px;
-        height: 43px;
-        font-size: 16px;
+        width: 30px;
+        height: 45px;
+        font-size: 15px;
     }
 
     .buttonEnter {
-        width: 60px; 
+        width: 50px;
         font-size: 14px;
     }
-    
+
     .buttonBack {
-        width: 72px;
-        font-size: 12px;
+        width: 50px;
+    }
+}
+
+.keyboardButton {
+animation: bounce 0.2s ease-in-out forwards;
+}
+
+@keyframes bounce {
+    0%{
+        transform: scale(1);
+        border-color: #ddd;
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+        border-color: #333;
     }
 }
