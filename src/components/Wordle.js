@@ -86,6 +86,7 @@ const Wordle = () => {
     }
   };
 
+  // Handling clicks for on-screen Keyboard
   const handleKeyClick = (key) => {
     if (isGameOver) return;
 
@@ -100,6 +101,7 @@ const Wordle = () => {
     }
   };
 
+  // Updating the on-screen keyboard state
   const updateKeyboardState = (word, score) => {
     const newKeyboardState = { ...keyboardState };
 
